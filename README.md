@@ -73,9 +73,9 @@ obtained via exposure to other programming languages towards learning Python.
 
 The suggested order for going through each of the directories is: 
 
-* `hello` -- Hello world
-* `bignum` -- Print some big numbers
-* `datatypes` -- Experiment with type conversion
+* `hello` -- Hello world [X]
+* `bignum` -- Print some big numbers [X]
+* `datatypes` -- Experiment with type conversion [x]
 * `modules` -- Learn to import from modules
 * `printing` -- Formatted print output
 * `lists` -- Python's version of arrays
