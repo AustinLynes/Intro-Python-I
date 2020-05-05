@@ -15,18 +15,18 @@ has the following keys:
  - name: a name string for this location
 """
 
-waypoints = [
-    {
-        "lat": 43,
-        "lon": -121,
-        "name": "a place"
+waypoints = [ # list
+    { # dict
+        "lat": 43,  # key: value => signed integer
+        "lon": -121, # key: value => signed integer
+        "name": "a place" # key: value => string 
     },
-    {
+    { # dict
         "lat": 41,
         "lon": -123,
         "name": "another place"
     },
-    {
+    { # dict
         "lat": 43,
         "lon": -122,
         "name": "a third place"
@@ -42,6 +42,12 @@ waypoints = [
 # waypoints list.
 
 # YOUR CODE HERE
+waypoints[0]["lon"] = -130
+waypoints[0]["name"] = "not a real place"
+
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+for i in range(len(waypoints)):
+    print(f'waypoint {i}')
+    print(f'name: {waypoints[i]["name"]}, \n lat: {waypoints[i]["lat"]}, \n  lon: {waypoints[i]["lon"]} \n')
