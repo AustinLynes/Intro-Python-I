@@ -5,7 +5,10 @@
 x = 12
 
 def change_x():
+    # to grab global scope global    
+    global x
     x = 99
+    
 
 change_x()
 
@@ -16,10 +19,13 @@ print(x)
 # This nested function has a similar problem.
 
 def outer():
-    y = 120
+    y =  120
 
     def inner():
+        # non local.. to grab from outside this scope
+        nonlocal y
         y = 999
+
 
     inner()
 
